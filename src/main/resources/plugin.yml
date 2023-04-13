@@ -2,3 +2,6 @@ name: DanielosTNTRainWand
 version: '${version}'
 main: me.kokodevs.danielostntrainwand.DanielosTNTRainWand
 api-version: 1.19
+commands:
+  tntcommand:
+    description: boom

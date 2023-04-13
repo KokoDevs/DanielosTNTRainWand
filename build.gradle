@@ -1,9 +1,18 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group = 'me.kokodevs'
 version = '1.0'
+
+shadowJar {
+    baseName = "TNTRainDanielos"
+    classifier = ''
+    archiveVersion = ''
+    destinationDir = file("C:\\Users\\user-pc\\AppData\\Roaming\\.feather\\player-server\\servers\\64d70e45-a96d-42b0-a0d5-432f757ee8e7\\plugins")
+}
+
 
 repositories {
     mavenCentral()
@@ -20,6 +29,13 @@ repositories {
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT"
 }
+
+compileJava {
+        options.compilerArgs += ["-parameters"]
+        options.fork = true
+        options.encoding = 'utf-8'
+}
+
 
 def targetJavaVersion = 17
 java {

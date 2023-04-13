@@ -1,0 +1,11 @@
+base1:
+  name: 'Red'
+  x: 0
+  y: 80
+  z: 0
+base2:
+  name: 'blue'
+  x: 5
+  y: 80
+  z: 5
+radius: 5
