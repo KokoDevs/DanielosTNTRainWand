@@ -4,8 +4,18 @@ base1:
   y: 80
   z: 0
 base2:
-  name: 'blue'
+  name: 'Blue'
   x: 5
   y: 80
   z: 5
 radius: 5
+explosion-power: 1
+
+title-settings:
+  time-before: 10 # in seconds
+  title: ""
+  subtitle: "גשם של טיאןטי יורד עכשיו על הקבוצה x!"
+  in: 10 #how much ticks till the title shows.
+  stay: 40 #how much ticks the title will show.
+  out: 10 #how much ticks till the title fades out.
+  #20 ticks = 1 second.
